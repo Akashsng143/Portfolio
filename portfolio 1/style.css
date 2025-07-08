@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+  backdrop-filter: blur(5px);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-text span {
+  color: #00d4ff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: #00d4ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00aaff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,0.7);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid div {
+  background: rgba(255,255,255,0.2);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.project-card {
+  background: rgba(0,0,0,0.3);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 2rem;
+}
